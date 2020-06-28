@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+
+.absolute{
+    position: absolute;
+}
+
+
+body,html{
+    height: 250px;
+    width: 300px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.alf_knock, .alf_knock_frame{
+    height: 250px;
+    width: 300px;
+    background-image: url("assets/bg.jpg");
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.alf_knock_frame{
+    background-image: url("assets/fg.png");
+    /*background-image: url("assets/fg0.png");*/
+    z-index: 1;
+    transition: 1s all ease;
+}
+
+.alf_knock_door{
+    height: 250px;
+    width: 117px;
+    background-image: url("assets/door.png");
+    top: 0px;
+    left: 160px;
+    z-index: 4;
+}
+
+.alf_knock_door_knock_1{
+    height: 33px;
+    width: 73px;
+    background-image: url("assets/knock1.png");
+    top: 70px;
+    left: 165px;
+    z-index: 4;
+}
+
+.alf_knock_door_knock_2{
+    height: 33px;
+    width: 64px;
+    background-image: url("assets/knock2.png");
+    top: 105px;
+    left: 210px;
+    z-index: 4;
+}
+
+.alf_knock_door_here{
+    height: 14px;
+    width: 31px;
+    background-image: url("assets/here.png");
+    top: 135px;
+    left: 200px;
+    z-index: 4;
+}
+
+
+
+.pulse_1{
+    animation: heartFadeInOut 1.5s ease infinite;
+}
+.pulse_2{
+    animation: heartFadeInOut 1.5s ease infinite reverse;
+}
+
+.pulse_3{
+    animation: heartFadeInOut 2s ease infinite;
+}
+
+
+
+@keyframes heartFadeInOut {
+    0% {
+        opacity:1;
+    }
+    14% {
+        opacity:1;
+    }
+    28% {
+        opacity:0;
+    }
+    42% {
+        opacity:0;
+    }
+    70% {
+        opacity:1;
+    }
+}
+
+.alf_eid_title{
+    height: 76px;
+    width: 120px;
+    background-image: url("assets/eid.png");
+    top: 50px;
+    left: 17px;
+}
+
+.alf_eid_para{
+    height: 51px;
+    width: 124px;
+    background-image: url("assets/text.png");
+    top: 138px;
+    left: 15px;
+}
+
+
+
+
+
+.door_open {
+    height: 250px;
+    width: 117px;
+    background-image: url("assets/door.png");
+    -webkit-animation: example 2s ease 0s 1;
+}
+@-webkit-keyframes example {
+    0% {
+        -webkit-transform: perspective(300) rotateY(0deg);
+        -webkit-transform-origin: 100% 0%;
+    }
+    100% {
+        -webkit-transform: perspective(300) rotateY(-90deg);
+        -webkit-transform-origin: 100% 0%;
+    }
+}
