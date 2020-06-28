@@ -40,7 +40,7 @@ var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 
-document.querySelector("#ytplayer").src="https://www.youtube.com/embed/GjBlcEz1s_o?rel=0&autoplay=1&controls=0&enablejsapi=1&playerapiid=ytplayer&loop=1&playlist=fjSQvEVbQ5w";
+document.querySelector("#ytplayer").src="https://www.youtube.com/embed/GjBlcEz1s_o?rel=0&autoplay=1&controls=0&enablejsapi=1&playerapiid=ytplayer&loop=1&playlist=GjBlcEz1s_o";
 
 
 var player;
